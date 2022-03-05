@@ -1,0 +1,131 @@
+<!-- Autor: Manuel Rodríguez-->
+<!-- Proyecto: esqueleto de sitio web de panadería -->
+<!-- Para la realización de este proyecto me ayude del framework Bootstrap -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Pastelería La Rosa Dulce</title>
+</head>   
+
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-light" style="background-color: #91cc75;"">
+        <a class="navbar-brand">
+            <img src="images/logo.jpg" alt="logo" width="100px" class="d-inline-block align-text-top">
+        </a>
+        <span class="navbar-txt"><h1 style="color: rgb(250, 250, 250);">Pastelería La Rosa Dulce</h1></span>
+        <form class="d-flex flex-row-reverse bd-highlight">
+            <div class="p-2 bd-highlight">
+                <a href="Pastelero.html"<button class="btn btn-light">Pastelero</a>
+            </div>
+            <div class="p-2 bd-highlight">
+                <a href="index.html"<button class="btn btn-light">Inicio</a>
+            </div>
+        </form>
+    </nav>
+</div>
+
+<!-- en una caja tenemos un menu desplasable para mostrar los pedidos activos-->
+<div class="container" style="background-color: #C4D2EE;">
+    <div class="row align-items-center border shadow-lg">
+        <p class="display-6 fw-bold">Actualmente estos son los pedidos</p>
+    </div>
+    <div class="col">
+        <select class="form-control form-control-sm">
+            <option>Escoge el pedido</option>
+            <option>No. 4723939</option>
+            <option>No. 8920587</option>
+        </select>
+    </div>
+</div>
+
+<!-- en una caja metemos los datos del pedido en formato tabla-->
+<div class="container my-5 " style="background-color: #e7d8df;">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h2 class="display-6 fw-bold">El pedido No. 4723939</h2>
+            <div class="col">
+                <table class="table table-striped"> <!-- inicia el formato de tabla-->
+                    <thead class="thead-dark"> 
+                        <tr>
+                            <th scope="col">Pastel</th>
+                            <th scope="col">Combinado</th>
+                            <th scope="col">Velitas</th>
+                            <th scope="col">Adornos</th>
+                        </tr>
+                        </thead>
+                     <tbody>
+                        <tr>
+                            <th scope="row">Durazno</th>
+                            <th>No</th>
+                            <th>Sencillas</th>
+                            <th>Adorno de rosas </th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Chocolate</th>
+                            <th>Zanahoria</th>
+                            <th>Curvas</th>
+                            <th>Letrero de Madera </th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Alan Sanchez Perez</h6>
+                </div>
+                <div class="col">
+                    <h6>5555555555</h6>
+                </div>
+                <div class="col">
+                    <h6>alanis42@gmail.com</h6>
+                </div>
+            </div>
+
+         <!-- ponemos otra fila y la separamos en dos columnas para mostarar las notas del pedido-->  
+            <div class="row"> 
+                <div class="col">
+                    <h6>Notas</h6>
+                </div>
+                <div class="col">
+                    <p>Este pedido no tiene notas</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+
+<footer class="text-center footer-style">
+    <div class="container-fluid" style="background-color: #91cc75;"">
+        <div class="row">
+            <div class="col">
+                <h3>Dirección</h3>
+                 <p>Colonia Arboledas, C.P. 16210, Alcaldia Tlalpan, CDMX <br /></p>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <p>Tel: 5555555555</p>
+                <p>Email: pedidos@delarosa.com</p>
+            </div>
+            <div class="col">
+                <h3>Horarios</h3>
+                <p>Horarios de atención Lunes-Viernes de 10:00 a 19:00, <br>Sabados y Domingos de 10:00 a 20:00</p>
+            </div>
+        </div>
+    </div>
+</footer>   
+
+</body>     
+
+
+</html>
